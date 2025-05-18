@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set Hydration Timer</title>
+    <link rel="stylesheet" href="styles/popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>let's stay hydrated ><</h1>
+      <div class="form-group">
+        <label for="interval">remind me every:</label>
+        <div class="input-wrapper">
+          <input type="number" id="interval" />
+          <span class="unit">min(s)</span>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="toggle-wrapper">
+          <label class="toggle">
+            <input type="checkbox" id="active-toggle" checked>
+            <span class="toggle-slider"></span>
+          </label>
+          <span class="toggle-label">timer active</span>
+        </div>
+      </div>
+      
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

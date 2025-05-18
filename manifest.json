@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Hydration Reminder",
+    "version": "1.0",
+    "description": "Reminds you to drink water with memes and a ding dong.",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["storage", "alarms", "notifications"],
+    "host_permissions": ["<all_urls>"],
+    "web_accessible_resources": [
+      {
+        "resources": ["charm.ogg", "reminder.html", "icon.png", "meme.png", "styles/popup.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }  
