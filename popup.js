@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
       intervalInput.value = result.interval;
     }
     
-    // Set the toggle to match the active state (default to checked/true if not set)
-    toggleInput.checked = result.timerActive === undefined ? true : result.timerActive;
+    // Set the toggle to match the active state (default to unchecked/false if not set)
+    toggleInput.checked = result.timerActive === undefined ? false : result.timerActive;
     
     // Auto-save and apply interval changes
     intervalInput.addEventListener('change', () => {
